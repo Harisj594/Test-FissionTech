@@ -51,9 +51,7 @@ export default function WaitConditionModal({ onClose }) {
   );
 
   return (
-    <Modal onClose={onClose}>
-      <h2 className="text-lg font-semibold mb-4">Set Wait Condition</h2>
-
+    <Modal onClose={onClose} modalTitle={"Set Wait Condition"}>
       <div className="space-y-4">
         <div>
           <label className="flex items-center gap-2">

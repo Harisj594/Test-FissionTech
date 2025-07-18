@@ -20,13 +20,12 @@ export default function AddAutomationModal({ onClose, onComplete }) {
       return;
     }
 
-    onClose();       // Close current modal
-    onComplete();    // Notify parent to open next modal
+    onClose();
+    onComplete({automationName});
   };
 
   return (
-    <Modal onClose={onClose}>
-      <h2 className="text-lg font-semibold mb-4">Add Automation</h2>
+    <Modal onClose={onClose} modalTitle={"Add Automation"}>
 
       <input
         type="text"

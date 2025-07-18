@@ -1,26 +1,3 @@
-// 'use client';
-// import { useState } from 'react';
-// import AddAutomationModal from './components/AddAutomationModal';
-
-// export default function HomePage() {
-//   const [showModal, setShowModal] = useState(false);
-
-//   return (
-//     <main className="flex items-center justify-center min-h-screen">
-//       <button
-//         onClick={() => setShowModal(true)}
-//         className="bg-blue-600 text-white px-6 py-3 rounded shadow"
-//       >
-//         Add Automation
-//       </button>
-
-//       {showModal && (
-//         <AddAutomationModal onClose={() => setShowModal(false)} />
-//       )}
-//     </main>
-//   );
-// }
-
 'use client';
 import { useState } from 'react';
 import AddAutomationModal from './components/AddAutomationModal';
@@ -31,8 +8,8 @@ export default function HomePage() {
   const [showStartModal, setShowStartModal] = useState(false);
 
   const handleAddComplete = () => {
-    setShowAddModal(false);       // close AddAutomationModal
-    setShowStartModal(true);      // open StartAutomationModal
+    setShowAddModal(false);
+    setShowStartModal(true);
   };
 
   return (
