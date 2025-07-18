@@ -26,7 +26,6 @@ export default function AddAutomationModal({ onClose, onComplete }) {
 
   return (
     <Modal onClose={onClose} modalTitle={"Add Automation"}>
-
       <input
         type="text"
         placeholder="Automation Name"

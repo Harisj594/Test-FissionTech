@@ -44,7 +44,6 @@ export default function StartAutomationModal({ onClose }) {
           ))}
         </div>
 
-        {/* Content */}
         <div className="w-2/3">{renderContent()}</div>
       </div>
     </Modal>
